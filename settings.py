@@ -1,2 +1,2 @@
-valid_email = 'bulychev73@gmail.com'
-valid_password = 'Kott22011980'
+valid_email = 'bulychev@mail.ru'
+valid_password = 'Kot'
