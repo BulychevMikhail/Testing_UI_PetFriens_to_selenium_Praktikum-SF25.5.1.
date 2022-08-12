@@ -15,8 +15,7 @@ def test_all_pets_are_present(go_to_my_pets):
    print(number_of_pets)
    # Сравниваем длину списка питомцев из таблицы с числом из блока слева
    assert len(pets_list_info) == int(number_of_pets)
-   # assert len(pets_list_info) ==
-   # assert int(number_of_pets) ==
+
 
 
 
