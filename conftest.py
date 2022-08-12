@@ -28,30 +28,25 @@ def go_to_my_pets():
     element = WebDriverWait(pytest.driver, 10).until(EC.presence_of_element_located((By.ID, "email")))
     # Вводим email
     pytest.driver.find_element(By.ID, 'email').send_keys(valid_email)
-    #time.sleep(5)
-
+    
     # Устанавливаем явное ожидание
     element = WebDriverWait(pytest.driver, 10).until(EC.presence_of_element_located((By.ID, "pass")))
     # Вводим пароль
     pytest.driver.find_element(By.ID, 'pass').send_keys(valid_password)
-    #time.sleep(5)
 
     # Устанавливаем явное ожидание для входа в аккаунт
     element = WebDriverWait(pytest.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'button[type="submit"]')))
     # Нажимаем на кнопку входа в аккаунт
     pytest.driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]').click()
-    #time.sleep(5)
 
     # Устанавливаем явное ожидание
     element = WebDriverWait(pytest.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'span.navbar-toggler-icon')))
     # Нажимаем на кнопку навигатор-бар(для формата окна  1400*800)
     pytest.driver.find_element(By.CSS_SELECTOR, 'span.navbar-toggler-icon').click()
-    #time.sleep(5)
 
     # Устанавливаем явное ожидание
     element = WebDriverWait(pytest.driver, 10).until(EC.presence_of_element_located((By.XPATH, '//a[contains(text(), "Мои питомцы")]')))
     # Нажимаем на кнопку Мои питомцы
     pytest.driver.find_element(By.XPATH, '//a[contains(text(), "Мои питомцы")]').click()
-    #time.sleep(5)
-
+ 
 
